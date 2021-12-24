@@ -1,0 +1,46 @@
+.lab{
+	position: absolute;
+    top: 105px;
+    width: 500px;
+    height: 2000px;
+    /*height: 500px;*/
+    margin-top: 50px;
+    
+    margin-left: 35%;
+    style="z-index:9999;position: relative;"
+    
+}
+.title{
+	margin-left: 15px;
+}
+.pp{
+	position: absolute;
+
+	margin-left: 20%;
+}
+.ww{
+	padding: 0px;
+	width: 250px;
+	position: absolute;
+	margin-left: 25%;
+}
+.ow{
+	padding: 0px;
+	width: 100px;
+	position: absolute;
+	margin-left: 28%;
+	
+}
+.op{
+	position: absolute;
+	width: 150px;
+	margin-left: 22%;
+}
+.cssId{
+	
+	margin-left:30%;
+	width: 65px;
+	height: 25px;
+	z-index:-100;
+	position: relative;
+}

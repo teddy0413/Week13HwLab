@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title></title>
+</head>
+<body>
+<link rel="stylesheet" href="stylehw.css">
+</head>
+<body>
+<div class="lab" id="nn">
+	<div style="border:2px #ccc solid;border-radius:10px;width:360px;height:500px;background-color:#eee;">
+		<div class="title">
+		<p><h1>Guessing game</h1></p></div>
+		<form name="number" id="number">
+			<label>
+			
+			<div class="ww">Your Guess(0~100)</div>
+			<div class="pp"><br><input type="number" name="num1" id="num1">
+			</div></label>
+			<br>
+			<br>
+			
+
+		<input type="button" value="guess" style="width: 152px; margin-top: 15px; margin-left:  30%;background-color: orange;"  onclick="getrange()" >
+		<output type="table" id="result"></output>	
+		</form>
+		<br>
+		<table id="table" border="1" style="margin-left: 23%; width: 200px;">
+			<tr>
+				<td>
+					Result
+				</td>
+			</tr>
+		</table>
+	</div>
+</div>
+			<script type="text/javascript">
+				
+
+				var mybody = document.getElementsByTagName("body")[0];
+				var mytable = document.createElement("table");
+				mytable.setAttribute("id","result");
+				var mytablebody = document.createElement("tbody");
+				
+				var currenttext ;
+				
+				var nnum=Math.floor(1+Math.random()*100);
+				var tmp=0;
+				var max=100;
+				var min=0;
+				function getrange() {
+					// body...
+					var a = parseInt(document.getElementById('num1').value);
+					
+					if(a==nnum){
+						alert('Your right!!');
+						location.reload();
+					}else{
+						if(a>nnum){
+								max=a;
+							
+						}else{
+							min=a;
+							
+						}
+					var tr = document.createElement("tr");
+					var td = document.createElement("td");
+					
+					currenttext=document.createTextNode(min+"~"+max+"\n");
+					td.appendChild(currenttext);
+					tr.appendChild(td);
+					document.getElementById("table").appendChild(tr);
+					
+
+					}
+				}
+					
+					
+							
+						
+						
+
+					
+					
+						
+					
+					
+					
+					
+				
+
+					
+						
+				
+
+
+
+				
+
+
+
+			</script>
+</body>
+</html>

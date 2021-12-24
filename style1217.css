@@ -1,0 +1,34 @@
+.lab{
+	position: absolute;
+    top: 105px;
+    width: 500px;
+    height: 2000px;
+    /*height: 500px;*/
+    margin-top: 50px;
+    
+    margin-left: 35%;
+    
+}
+.pp{
+	position: absolute;
+
+	margin-left: 20%;
+}
+.ww{
+	padding: 0px;
+	width: 100px;
+	position: absolute;
+	margin-left: 30%;
+}
+.ow{
+	padding: 0px;
+	width: 100px;
+	position: absolute;
+	margin-left: 28%;
+	
+}
+.op{
+	position: absolute;
+	width: 150px;
+	margin-left: 22%;
+}

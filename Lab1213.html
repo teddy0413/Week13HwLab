@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>
+		
+	</title>
+	<link rel="stylesheet" href="style1217.css">
+</head>
+<body>
+	<div class="lab">
+	<div style="border:2px #ccc solid;border-radius:10px;width:360px;height:200px;background-color:#eee;">
+		<form name="name" id="name">
+
+		
+
+			<label>
+			
+				<div class="ww">Number 1</div>
+				<div class="pp"><br><input type="number" name="num1" id="num1">
+			</div></label>
+			<br>
+			<br>
+			<br>
+			
+				<div class="ww">Number 2</div>
+				<div class="pp"><br><input type="number" name="num2" id="num2">
+			</div>
+			<br>
+			<br>
+			<br>
+			
+				<div class="ow">operate way?</div><br>
+				<div class="op"><select name="operator" style="width: 152px" id="opp">
+					<option value="plus">+</option>
+					<option value="minus">-</option>
+					<option value="mutiply">*</option>
+					<option value="devided">/</option>
+					
+			</div>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			<br>
+			
+		
+		
+
+			<input type="button" value="add" style="width: 152px; margin-top: 15px; background-color: orange;"  onclick="calculate()"></button> result:
+			<output id="result"></output>
+		</form>
+		
+	</div>
+
+	<script type="text/javascript">
+		var input1;
+		var input2;
+		var inpop;
+		var num1;
+		var num2;
+		var result;
+		
+		
+			
+		
+		
+		
+		
+
+		function calculate() {
+			// body...
+			var form = document.getElementById("name");
+			var a = parseInt(document.getElementById('num1').value);
+    		var b = parseInt(document.getElementById('num2').value);
+    		var c = form.opp.value;
+    		
+			if(c=='plus'){
+				document.getElementById('result').value =a+b;
+				
+
+			}
+			if(c=='minus'){
+				document.getElementById('result').value =a-b;
+			}
+			if(c=='mutiply'){
+				document.getElementById('result').value =a*b;
+			}
+			if(c=='devided'){
+				document.getElementById('result').value =a/b;
+			}
+			
+		}
+		
+	</script>
+</body>
+</html>
